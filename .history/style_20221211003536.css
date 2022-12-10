@@ -1,0 +1,40 @@
+body
+{
+    background: #2b2b2b;
+    margin: 0;
+    padding: 0;
+}
+.loader
+{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.loader span 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: rgba(255,255, 255, .1);
+    display: inline-block;
+    transition: all .5s;
+    animation: animate 2s infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        color: rgab(255,255,255,.1);
+        transform: translateY(0);
+        margin-left: 0;
+    }
+    25%{
+        color: yellow;
+        transform: translateY(-15px);
+        margin-left: 10px;
+    }
+    100%{
+        color:rgba(255,255,255,.1);
+        transform:translateY(0);
+    }
+}
